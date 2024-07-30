@@ -1,6 +1,6 @@
 
 body {
-    background-color: #1c59a8;
+    background-color: #202128;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
@@ -11,12 +11,12 @@ body {
     flex-flow: wrap;
 }
 .form {
-    background-color: rgba(39, 39, 39, 0.452);
+    background-color: #202128;
     padding: 5%;
     width: 70%;
 }
 .inform{
-    width: 90%;
+    width: 80%;
     background-color: rgba(54, 54, 54, 0.185);
     border: solid rgb(82, 82, 82);
     padding: 5%;
@@ -37,19 +37,19 @@ div, main, body {
     scroll-behavior:smooth
 }
 .bgc {
-    background-color: #424242;
+    background-color: #202128;
     width: 100%;
 }
 .yellowfont {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Raleway, sans-serif;
     color:  #1c59a8;
 }
 .whitefont {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Raleway, sans-serif;
     color: white;
 }
 .redfont {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Raleway, sans-serif;
     color: rgb(0, 0, 0);
     font-size: larger;
 }
