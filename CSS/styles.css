@@ -1,9 +1,25 @@
 
+.navbar{
+    width: 100%;
+    background-color: #ffffff;
+
+}
+.nav-item{
+    background-color: #1c59a8;
+    border-radius: 15%;
+    padding: 0.25%;
+    color: #ffffff;
+    
+}
+h1  {
+    margin: auto;
+    width: max-content;
+}
 body {
     background-color: #202128;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 100%;
 }
 .grid {
     display: flex;
@@ -12,11 +28,12 @@ body {
 }
 .form {
     background-color: #202128;
-    padding: 5%;
-    width: 70%;
+    padding: 0%;
+    width: 50%;
+    margin: auto;
 }
 .inform{
-    width: 80%;
+    width: 50%;
     background-color: rgba(54, 54, 54, 0.185);
     border: solid rgb(82, 82, 82);
     padding: 5%;
@@ -36,10 +53,7 @@ select {
 div, main, body {
     scroll-behavior:smooth
 }
-.bgc {
-    background-color: #202128;
-    width: 100%;
-}
+
 .yellowfont {
     font-family: Raleway, sans-serif;
     color:  #1c59a8;
