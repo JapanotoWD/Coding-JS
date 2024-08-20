@@ -5,35 +5,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./CSS/styles.css">
-  <script>
-    import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
-    import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
-  </script>
+  <script src="JS/index.js"></script>
+
 
   <title>Wolf Gym Olivos</title>
 </head>
 
 <body>
-<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script><script>
-  new Glide('.glide').mount()
-  </script>
-  <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
   <h1 class="whitefont">Wolf Gym Olivos</h1>
+
   <!--Navbar-->
-    <nav>
-      <a href="home.html"><img src="./imgs/wolf-logo1.png"></a>
-      <div class="nav-end">
-        <ul class="nav-content whitefont">
-          <li><a class="nav-item nav-button" href="home.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a></li>
-          <li><a class="nav-item" href="https://www.instagram.com/wolfgymolivos/?hl=es"><img src="./imgs/ig-icon.png"></a></li>
-          <li><a class="nav-item nav-button" href="./conctact.html">Contacto</a></li>
-          <li><a class="nav-item" href=""></a></li>
-        </ul>
-      </div>
-    </nav>
+  <nav>
+    <a href="./home.html"><img src="./imgs/wolf-logo1.png"></a>
+    <div class="nav-end">
+      <ul class="nav-content whitefont">
+        <li><a class="nav-item nav-button" href="./home.html" role="button">Home</a></li>
+        <li><a class="nav-ig" href="https://www.instagram.com/wolfgymolivos/?hl=es"><img src="./imgs/ig-icon.png"></a>
+        </li>
+        <li><a class="nav-item nav-button" href="./conctact.html">Contacto</a></li>
+        <li><a class="nav-item" href=""></a></li>
+      </ul>
+    </div>
+  </nav>
   <!--Navbar-->
   <!-- Carrousell -->
-
+  <div class="glider-contain">
+    <div class="glider">
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="1"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="2"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="3"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="4"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="5"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="6"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="7"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="8"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="9"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="10"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="11"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="12"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="13"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="14"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide1.PNG" alt="15"></span></div>
+      <div><span class="slide-title"><img src="./imgs/slide2.PNG" alt="16"></span></div>
+    </div>
+    <button class="glider-prev">&laquo;</button>
+    <button class="glider-next">&raquo;</button>
+    <div id="dots"></div>
+  </div>
   <!-- Carrousell -->
   <div class="whitefont">
     <h2>Salón de musculación con equipamiento de primer nivel</h2>
