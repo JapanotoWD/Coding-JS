@@ -12,7 +12,7 @@ $pesas=$_POST['pesas']
 $functional=$_POST['functional']
 $zumba=$_POST['zumba']
 
-$fmensaje="
+$mensaje="
 <strong>Nombre;</strong> $nombre <br /><br/>
 <strong>;E-mail</strong> $email <br /><br/>
 <strong>;telefono</strong> $telefono <br /><br/>

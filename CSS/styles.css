@@ -1,4 +1,5 @@
 nav {
+    margin-top: 0%;
     display: flex;
     justify-content: space-between;
     /* Distribuir elementos de inicio a fin */
@@ -11,7 +12,7 @@ nav {
 .nav-end {
     display: flex;
     justify-content: flex-end;
-    flex-grow: 1;
+    flex-grow: 0.5;
     /* Empuja los elementos al final */
 }
 
@@ -36,8 +37,8 @@ nav img {
 
 .nav-item:hover {
     background-color: #ffffff;
-    color: #1c59a8;
-    border-color: #1c59a8;
+    color: rgb(255, 34, 114);
+    border-color: #ff2273;
     border-style: solid;
 }
 
@@ -50,7 +51,7 @@ nav img {
 }
 
 .nav-button {
-    background-color: #1c59a8;
+    background-color: #ff2273;
     border-radius: 15%;
     padding: 15%;
     color: #ffffff;
@@ -59,8 +60,15 @@ nav img {
     padding: 14px 16px;
 }
 
+.nav-logo {
+    margin-left: 10px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    border-radius: 15%;
+}
+
 .btn {
-    background-color: #1c59a8;
+    background-color: #ff2273;
     border-radius: 15%;
     padding: 15%;
     color: #ffffff;
@@ -70,55 +78,64 @@ nav img {
 }
 
 .btn:hover {
-    background-color: #1c59a81f;
-    color: #1c59a8;
-    border-style: groove;
-    border-color: #1c59a8;
-    font-style: none;
-    font-family: sans-serif;
+    background-color: #ff22731f;
+    color: #ff2273;
+    border-color: #ff2273;
+}
+
+.slider {
+    width: 100%;
+    background-color: #202;
+}
+
+.slider-border{
+    box-sizing: border-box;
+    border-style:solid;
+    border-width: 10px;
+    border: #ff2273;
 }
 
 /*    _____ __ _     __                _
-   / ___// /(_)___/ /___  ____      (_)___
-  / (_ // // // _  // -_)/ __/_    / /(_-<
-  \___//_//_/ \_,_/ \__//_/  (_)__/ //___/
-                              |___/
+/ ___// /(_)___/ /___  ____      (_)___
+/ (_ // // // _  // -_)/ __/_    / /(_-<
+\___//_//_/ \_,_/ \__//_/  (_)__/ //___/
+|___/
 
-  Version: 1.7.4
-  Author: Nick Piscitelli (pickykneee)
-  Website: https://nickpiscitelli.com
+Version: 1.7.4
+Author: Nick Piscitelli (pickykneee)
+Website: https://nickpiscitelli.com
   Documentation: http://nickpiscitelli.github.io/Glider.js
   License: MIT License
   Release Date: October 25th, 2018
   */
-
-* {
-    box-sizing: border-box
-}
-
-html,
-body {
-    width: 100%;
-    overflow: hidden;
-}
-
-.glider-contain {
-    width: 90%;
-    max-width: 997px;
-    margin: 0 auto;
-}
-
-.glider-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+  * {
+      box-sizing: border-box
+    }
+    
+    html,
+    body {
+        width: 100%;
+        overflow: hidden;
+    }
+    
+    .glider-contain {
+        width: 90%;
+        max-width: 997px;
+        margin: 0 auto;
+    }
+    
+    .glider-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     min-height: 300px;
     border: 3px solid currentColor;
     background-image: url('logo.svg');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-
+    
 }
 
 .glider-slide img {
@@ -130,23 +147,25 @@ body {
     /* https://modernfontstacks.com/ */
     font-size: 3rem;
     position: relative;
-    top: 100px;
+    top: 2%;
+    margin-top: -2%;
+    margin-bottom: -2%;
 }
 
 .glider-slide:nth-child(4n+1) {
-    color: #8cc9f0;
+    color: #ff2273;
 }
 
 .glider-slide:nth-child(4n+2) {
-    color: #a89cc8;
+    color: #ff2273;
 }
 
 .glider-slide:nth-child(4n+3) {
-    color: #efa8b0;
+    color: #ff2273;
 }
 
 .glider-slide:nth-child(4n) {
-    color: #9ef096;
+    color: #ff2273;
 }
 
 
@@ -224,7 +243,7 @@ body {
     opacity: 1;
     line-height: 1;
     transition: opacity 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67),
-        color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    color 0.5s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 
 .glider-prev:hover,
@@ -291,7 +310,7 @@ body {
         width: 7px;
         height: 3px;
     }
-
+    
     .glider::-webkit-scrollbar-thumb {
         opacity: 1;
         border-radius: 99px;
@@ -303,15 +322,31 @@ body {
 /*Stop of not mine*/
 
 h1 {
-    margin: auto;
-    width: max-content;
+    letter-spacing: 0;
+    font-family: Raleway, sans-serif;
+    font-weight: 900;
+    color: #fafafa;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    width: 100%;
+    font-size: clamp(30px,3vw,55px);
+    line-height: clamp(30px,3vw,55px);
+}
+
+h1 span {
+    width: 100%;
+    box-sizing: border-box;
+    color:#ff2273;
 }
 
 body {
-    background-color: #202128;
+    background-color: #fafafa;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    height: 100%;
 }
 
 .grid {
@@ -323,7 +358,7 @@ body {
 .form {
     background-color: #202128;
     padding: 0%;
-    height: 700px;
+    height: 1000px;
     width: 500px;
     margin: auto;
 }
@@ -354,12 +389,23 @@ body {
     scroll-behavior: smooth
 }
 
-.yellowfont {
+.secondary-font {
     font-family: sans-serif;
-    color: #1c59a8;
+    color: #ff2273;
 }
 
-.whitefont {
-    font-family: sans-serif;
-    color: white;
+.primary-font {
+    font-size: clamp(14px,1.5vw,25px);
+    line-height: clamp(14px,3vw,30px);
+    color: #fafafa;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    width: 100%;
+}
+
+.secondary-bg{
+    background-color: #202;
+    width: 100%;
 }
